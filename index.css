@@ -1,0 +1,238 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header,div{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width:820px;
+}
+
+
+.nav {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #ac151a;
+    width: 820px;
+    padding-right: 10px;
+    margin-top:20px;
+    margin-bottom:10px;
+    margin-left:264px;
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-size: 15px;
+    color: white;
+    border-bottom: 3px solid rgb(190, 183, 183);
+
+}
+
+.subscribe {
+    padding-left: 500px;
+    padding-right: 50px;
+    font-family: 'Hind', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    color: white;
+}
+
+#fivedots{
+    width: 15px;
+    margin: auto;
+    border: 0px;
+}
+
+.social img {
+    width: 35px;
+    border-bottom: 3px solid rgb(192, 191, 191);
+    
+}
+.social ul{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.top {
+    position: relative;
+    background-image: url(/img/top-image.png);
+    background-size: 100%;
+    background-position: 15% 30%;
+    width: 820px;
+    height: 230px;
+    margin: 0 auto;
+    border: 5px solid white;
+}
+
+.grid {
+    position: absolute;
+    background-image: url(/img/grid.png);
+    background-size: cover;
+    width: 819px;
+    height: 230px;
+    margin: 0 auto;
+    opacity: 0.3;
+}
+
+.logo {
+    position: absolute;
+    right: 50px;
+    background-image: url(/img/peralta-logo.png);
+    background-position: 15% 50%;
+    background-repeat: no-repeat;
+    background-size: 280px;
+    width: 100%;
+    height: 100%;
+}
+
+div a{
+    margin:3px;
+    padding:1px;
+}
+
+
+.button {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80px;
+    height: 10px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.article1 {
+    margin-left:267px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:820px;
+    
+    
+}
+
+.part1,.part2,.part3{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border:3px solid white;
+    background:white;
+    height:20rem;
+    padding:15px;
+    width:265px;
+}
+
+.article1 h1{
+    font-Size:16px;
+    font-family: sans-serif;
+    margin:8px;
+
+}
+.article1 p{
+    font-Size:15px;
+    font-family: sans-serif;
+    margin:3px;
+
+}
+
+article a {
+    font-family: 'Hind', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #B6292A;
+    text-transform: uppercase;
+    margin: 22px;
+}
+
+article a:visited {
+    font-family: 'Hind', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #B6292A;
+    text-transform: uppercase;
+    margin: 50px;
+}
+
+.gridphoto{
+  display: grid;
+  height: 500px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: 5px solid grey;
+  justify-content: center;
+  grid-gap: 10px;
+  margin-top: 30px ;
+}
+
+.card1{
+    border:2p grey;
+    grid-column-start: 1 ;
+    grid-column-end:2;
+    grid-row-start:1 ;
+    grid-row-end:2;
+
+    background-image:url("#")
+  }
+  .card2{
+    border:2px red;
+    background-position:center top;
+    background-size:160%;
+    background-image:url("#")
+  }
+  .card3{
+    border:2px red;
+    background-position:center top;
+    background-size:160%;
+    background-image:url("#")
+  }
+  .card4{
+    border:2px solid red;
+    background-position:center top;
+    background-size:160%;
+    background-image:url("#")
+  }
+.container{
+    display: flex;
+    justify-content: space-around;
+    border-color: blue;
+    width:20dx;
+    height:30px;
+    position: absolute;;
+    right:30px；
+}
+
+
+     footer{
+         display:flex;
+         flex-direction: row;
+         background-color:white;
+         width:820px;
+         margin-left:210px:
+         padding:100px;
+     }
+     .contact div{
+         display:flex;
+         flex-direction: column;
+         align-items: flex-start;
+         margin:20px;
+         padding:10px;
+     }
+     .form{ 
+         margin-left:5px;
+         padding:2px;
+        display:flex;
+        flex-direction: column;
+        align-items:c;
+         border:3px solid green;
+     }
+    
+    
+  
