@@ -5,32 +5,44 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header,div{
+.header{
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    width:820px;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:center;
+    padding-top:30px;
+    width:60%;
+    margin:0 auto;  
 }
+
+
 
 
 .nav {
     display:flex;
-    justify-content:space-between;
-    align-items: center;
-    background-color: #ac151a;
-    width: 820px;
-    padding-right: 10px;
+    flex-direction: row;
+    justify-content:space-around;   
+    margin:0 auto;
+    padding:3px;
+    width: 60%; 
     margin-top:20px;
     margin-bottom:10px;
-    margin-left:264px;
-    text-align: center;
     font-family: 'Hind', sans-serif;
     font-size: 15px;
     color: white;
-    border-bottom: 3px solid rgb(190, 183, 183);
+    
+}
+
+.nav li{
+    
+    background-color: #B6292A;
+    padding:5px 30px 5px 30px;
+    border-bottom: 3px solid rgb(231, 224, 224);
+    
 
 }
+
+
 
 .subscribe {
     padding-left: 500px;
@@ -61,20 +73,20 @@ header,div{
 
 .top {
     position: relative;
-    background-image: url(/assets/top-image.png);
+    background-image: url(assets/top-image.png);
     background-size: 100%;
     background-position: 15% 30%;
-    width: 820px;
+    width: 59%;
     height: 230px;
     margin: 0 auto;
-    border: 5px solid white;
+    border: 2px solid white;
 }
 
 .grid {
     position: absolute;
-    background-image: url(/assets/grid.png);
+    background-image: url(assets/grid.png);
     background-size: cover;
-    width: 819px;
+    width: 100%;
     height: 230px;
     margin: 0 auto;
     opacity: 0.3;
@@ -82,11 +94,11 @@ header,div{
 
 .logo {
     position: absolute;
-    right: 50px;
-    background-image: url(/assets/peralta-logo.png);
+    right: 67px;
+    background-image: url(assets/peralta-logo.png);
     background-position: 15% 50%;
     background-repeat: no-repeat;
-    background-size: 280px;
+    background-size: 320px;
     width: 100%;
     height: 100%;
 }
@@ -102,19 +114,19 @@ div a{
     flex-direction:row;
     justify-content: space-evenly;
     align-items: center;
-    width: 80px;
+    width: 60px;
     height: 10px;
     margin: auto;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 .article1 {
-    margin-left:267px;
+    margin:0 auto;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    width:820px;
-    
+    width:60%;
+    margin-bottom: 30px;
     
 }
 
@@ -124,15 +136,18 @@ div a{
     align-items: center;
     border:3px solid white;
     background:white;
-    height:20rem;
+    height:21rem;
     padding:15px;
-    width:265px;
+    width:30%;
+    justify-content: center;
+    border-bottom: 3px solid grey;
 }
 
 .article1 h1{
     font-Size:16px;
     font-family: sans-serif;
     margin:8px;
+    
 
 }
 .article1 p{
@@ -157,48 +172,92 @@ article a:visited {
     font-size: 12px;
     font-weight: bold;
     text-decoration: none;
-    color: #B6292A;
+    color:whitesmoke;
     text-transform: uppercase;
     margin: 50px;
 }
 
 .gridphoto{
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  margin-left:290px;
+  width:60%;
   height: 500px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  border: 5px solid grey;
-  justify-content: center;
-  grid-gap: 10px;
-  margin-top: 30px ;
 }
 
 .card1{
-    border:2p grey;
+    border:2px solid rgb(235, 231, 231);
     grid-column-start: 1 ;
     grid-column-end:2;
     grid-row-start:1 ;
     grid-row-end:2;
-
-    background-image:url("#")
+    background-image:url("assets/sk8er-4.png");
+    background-size:cover;
+    background-position:right;
+    background-repeat: no-repeat;
+    color:white;
+    font-size:50px;
+    font-family:Arial;
+    text-align:center;
+    padding:70px 0;
+    font-weight:bold; 
   }
   .card2{
-    border:2px red;
+    grid-column-start: 2 ;
+    grid-column-end:3;
+    grid-row-start:1 ;
+    grid-row-end:2;
+    border:2px solid whitesmoke;
     background-position:center top;
     background-size:160%;
-    background-image:url("#")
+    background-image:url("assets/sk8er-3.png");
+    background-size:cover;
+    background-position:left;
+    background-repeat: no-repeat;
+    color:white;
+    font-size:50px;
+    font-family:-apple-system,Helvetica,Arial,sans-serif;
+    text-align:center;
+    padding:70px 0;
+    font-weight:bold;
   }
   .card3{
-    border:2px red;
-    background-position:center top;
-    background-size:160%;
-    background-image:url("#")
+    grid-column-start: 1 ;
+    grid-column-end:3;
+    grid-row-start:2 ;
+    grid-row-end:3;
+    border:2px solid whitesmoke;
+    
+    background-image:url("assets/sk8er-1.png");
+    background-size:cover;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    color:white;
+    font-size:50px;
+    font-family:Arial;
+    text-align:center;
+    padding:70px 0;
+    font-weight:bold;
   }
   .card4{
-    border:2px solid red;
-    background-position:center top;
-    background-size:160%;
-    background-image:url("#")
+    grid-column-start: 3 ;
+    grid-column-end:4;
+    grid-row-start:1 ;
+    grid-row-end:3;
+    border:2px solid whitesmoke;
+    background-image:url("assets/sk8er-2.png");
+    background-size:cover;
+    background-position:right top;
+    background-repeat: no-repeat;
+    color:white;
+    font-size:50px;
+    font-family:Arial;
+    text-align:center;
+    padding:150px 0;
+    font-weight:bold;
   }
+
 .container{
     display: flex;
     justify-content: space-around;
@@ -207,32 +266,131 @@ article a:visited {
     height:30px;
     position: absolute;;
     right:30px；
-}
+    }
+ 
+ .skatespan{
+     position:relative;
+     left:-15px;
+     bottom: 4px;
+ }
+ .box {
+    width: 150px;
+    height: 55px;
+    background-color:rgb(126, 25, 7);
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    margin: -2px;
+    float: left;
+    bottom: -60px;
+    left:90px;
+    border-bottom: 3px solid grey;
+  }
+  .box.arrow-right:after {
+    content: " ";
+    position: absolute;
+    right: -30px;
+    top: 1px;
+    border-top: 27px solid transparent;
+    border-right: none;
+    border-left: 30px solid rgb(126, 25, 7);
+    border-bottom: 27px solid transparent;
+  }
+  
+
+     .skateboard{
+         width:60%;
+         height: 300px;
+         
+         margin:0 auto;
+         display:flex;
+         flex-direction:row;
+         justify-content: space-around;
+         border :3px solid whitesmoke;
+         background-color: whitesmoke;
+         margin-bottom: 30px;
+         border-bottom: 3px solid grey;
+     }
 
 
      footer{
-         display:flex;
-         flex-direction: row;
-         background-color:white;
-         width:820px;
-         margin-left:210px:
-         padding:100px;
-     }
-     .contact div{
-         display:flex;
-         flex-direction: column;
-         align-items: flex-start;
-         margin:20px;
-         padding:10px;
-     }
-     .form{ 
-         margin-left:5px;
-         padding:2px;
+        display:flex;
+        flex-direction: row;
+        background-color:white;
+        padding:10px;
+        width:60%;
+        height:300px;
+        margin:0 auto;
+        border-bottom: 3px solid grey;
+        margin-bottom: 80px;
+    }
+    
+    .intro{
+        display:grid;
+        grid-template-columns: 1fr;
+        width:70%;
+        height:140px;
+        margin-top: 20px;
+        margin-left: 30px;
+        
+    }
+
+    .form{ 
+        
+        margin-left:5px;
+        padding:2px;
         display:flex;
         flex-direction: column;
-        align-items:c;
-         border:3px solid green;
+        align-items:left;
+        width:370px;
+        height:250px;
+        margin: 0 auto;
+        /* border:2px solid green; */
+    }
+    
+    .intro p{
+        text-align: justify;
+        font-size: 15px;
+        line-height: 1.5;
+        margin-top: 10px;
+        width:338px;
+    }
+
+    .icons{
+        width:150px;
+        height:20px;
+        margin-top: 25px;
+        color: rgb(102, 99, 99);
+        
+    }
+     #submit{
+         width:200px;
+         height:30px;
+         background-color: #B6292A;
+         color:whitesmoke;
+         margin-left: 165px;
+         margin-top: 10px;
+         border-style: none;
      }
-    
-    
-  
+    .name{
+        width:100%;
+        height:30px;
+        margin:20px 0 5px 0;
+        
+        border-style: inset;
+        
+    }
+    .email{
+        width:100%;
+        height:30px;
+        margin:5px 0 5px 0;
+        border-style:inset;
+        border-color:grey;
+    }
+    .message{
+        width:100%;
+        height:80px;
+        margin:5px 0 0 0;
+        border-style:inset;
+        border-color:grey;
+    }

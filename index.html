@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sk8er-Site</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.2/css/font-awesome.css">
+
+      
     <style>
        body{
-        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(161, 153, 153, 0.5) ),url(/assets/bg.jpg);
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(218, 211, 211, 0.856) ),url(assets/bg.jpg);
         max-width: 100%;
         max-height: 100%;
         background-size: cover;
@@ -20,10 +24,10 @@
     </style>
 </head>
 <body>
-    <header>
-    <div class="subscribe">SUBSCRIBE&bull;</div>
-    <div class="social">
-        <img id="fivedots" src="https://i.ibb.co/2tQwQpj/161021694724586586.png">
+    <header class="header">
+    <span class="subscribe">SUBSCRIBE &bull;</span>
+    <span> <img id="fivedots" src="https://i.ibb.co/2tQwQpj/161021694724586586.png"></span>
+       <div class="social">
         <ul>
             <li><a href="https://www.facebook.com/"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png"></a></li>
             <li><a href="#"><img src="https://cdn0.iconfinder.com/data/icons/social-rounded/72/RSS-512.png"></a></li>
@@ -55,7 +59,7 @@
         <input type="radio" id="b3" name="button" value="3">
     </form> 
 
-    <article class="article1">
+    <div class="article1">
         <div class="part1">
             <h1>Tony Hawk Foundation Raises Big Money At Celeb Fundrasier</h1>
             <p class="date">October 10, 2013</p>
@@ -74,46 +78,75 @@
             <p class="text">Since filming is in full swing for the Vans video, 'Adventures With Chris' has taken the opportunity to sit some of the team down to look behind the skating in some of the earlier parts. Today we sit down Ray Barbee, one of the smoothest guys to ever step on a skateboard, and Chris' childhood idol...</p>
             <a href="#">[ read more ]</a>
         </div>
-    </article>
+    </div>
+
+    <div class="box arrow-right">
+        <span class="skatespan">SKATEBOARDERS</span>
+    </div>
 
     <div class="gridphoto">
-        <div class="card1" card1>
-        <div class="card2" card2>
-        <div class="card3" card3>
-        <div class="card4" card4>
-            
+        <div class="card1" card1>LANCE MOUTAIN</div>
+        <div class="card2" card1>RODNEY MULLEN</div>
+        <div class="card3" card3>STEVE CABLLERO</div>
+        <div class="card4" card4>TOMMY GUEERRO</div>  
     </div>
 
-    <footer class="contact">
-        <div>
-         
-         
-            <h1 style="color:black;font-family:  sans-serif;font-size:15px;">Contact Us for More Information</h1>
-            <p style="color:black;font-family: Arial, Helvetica, sans-serif;margin-top: 10px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aliquam <br/>
-             semper nulla ut odio secelerisque varius.Phasellus dui nunc,<br/>
-             lacinia at vehicula congue,vehicula nec tellus.Morbi dignissim<br/>
-            rutrum lorem at tincidunt.
-         </p>
+   
+    
+    <div class="skateboard">
+        <img src="assets/sk8-3.png" alt="">
+        <img src="assets/sk8-4.png" alt="">
+        <img src="assets/sk8-5.png" alt="">
+        <img src="assets/sk8-6.png" alt="">
+        <img src="assets/sk8-7.png" alt="">
+        <img src="assets/sk8-8.png" alt="">
+        <img src="assets/sk8-9.png" alt="">
+        <img src="assets/sk8-10.png" alt="">
+        <img src="assets/sk8-2.png" alt="">
+        <img src="assets/sk8-1.png" alt="">
+    </div>
+
+    <footer class="footer">
+
+        <div class="intro">
+            <span style="color:black;font-family:sans-serif;font-size:20px;">
+                Contact Us for More Information
+            </span>
+            <p style="color:grey;font-family:Arial, Helvetica, sans-serif;"> 
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aliquam 
+             semper nulla ut odio secelerisque varius.Phasellus dui nunc,
+             lacinia at vehicula congue,vehicula nec tellus.Morbi dignissim
+             rutrum lorem at tincidunt.
+            </p>
+            <div class="icons">
+                <span class="fab fa-facebook-square fa-lg" aria-hidden="true"></span>
+                <span class="fa fa-rss-square fa-lg" aria-hidden="true"></span>
+                <span class="fab fa-twitter-square fa-lg" aria-hidden="true"></span>
+                    <span class="fa fa-youtube-square fa-lg" aria-hidden="true"></span>
+            </div>
         </div>
     
-        <div>
-    <form >
+       
+       
+
+        <form class="form">
         <ul>
             <li>
-                <input type="text" name="name" placeholder="NAME">
+                <input class="name"type="text" name="name" placeholder="NAME"></input>   
+                
             </li>
             <li>
-                <input type="text" name="email" placeholder="EMAIL">
+                <input class="email"type="text" name="email" placeholder="EMAIL"></input>   
             </li>
             <li>
-                <textarea name="message" placeholder="YOUR MESSAGE"
-                background color="white" style="width:20px; height:20px;"><textarea>
+                <input class="message" placeholder="YOUR MESSAGE" > </input>   
             </li>
-        </ul>
+          </ul>
     
-    <button type="submit" form="form1" value="Submit">Submit</button>
-    </form>
-    </div>
+             <button type="submit" id="submit" value="Submit">Submit</button>
+
+          </form>
+          </div>
      </footer>
 
 </body>
